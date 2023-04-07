@@ -1,0 +1,124 @@
+.foot{
+    width: 100%;
+    
+    padding: 50px 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #002529;
+    flex-wrap: wrap;
+   
+}
+
+.footer-main{
+    
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 20px;
+        li{
+            margin-right:70px;
+            a{
+                color: #fff;
+                text-decoration: none;
+                transition: 0.5s;
+
+            }
+            a:hover{
+                color: #F67E7E;
+            }
+        }
+    }
+}
+
+.footer-second
+{
+    
+    p{
+        color: #fff;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+.footer-third{
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a{
+            margin-left: 20px;
+        }
+    }
+    p{
+        color: #fff;
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 12%;
+    }
+}
+
+@media (max-width:925px){
+    .footer-third{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        p{
+            margin-top: 0%;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width:664px){
+    .foot{
+        width: 100%;
+        
+        .footer-main{
+            width: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .footer-link1{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+
+            }
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #002529;
+        flex-wrap: wrap;
+        flex-direction: column;
+        .footer-second{
+            margin-top: 50px;
+            p{
+                text-align: center;
+            }
+        }
+
+        .footer-third{
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+       
+    }
+}
