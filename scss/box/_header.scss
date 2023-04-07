@@ -5,6 +5,7 @@
     font-family: 'Livvic', sans-serif;
 }
 
+
 header{
     padding: 30px 65px;
     background-color: #014E56;
@@ -43,7 +44,7 @@ header{
         transition: 0.5s;
     }
     a:hover{
-        color: rgb(153, 147, 147);
+        color: #F67E7E;
     }
 }
 
@@ -56,8 +57,13 @@ header{
     color: #fff;
     font-size: 18px;
     font-weight: 600;
+    transition: 0.5s;
 }
-
+.nav-btn:hover{
+    background-color: #fff;
+    color: #014E56;
+    
+}
 .nav-toggler{
     width: 45px;
     height: 40px;
