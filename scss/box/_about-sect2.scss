@@ -1,7 +1,7 @@
 .sect2 {
     background-color: #004047;
     width: 100%;
-    padding: 100px 50px;
+    padding: 100px 20px;
 }
 
 .sect2-cont {
@@ -160,4 +160,20 @@
     background-repeat: no-repeat;
     background-position: center;
     
+}
+
+
+@media (max-width:516px){
+    .sect2-cont {
+        h2 {
+            height: 48px;
+            width: 100%;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #fff;
+        }
+    }
 }
