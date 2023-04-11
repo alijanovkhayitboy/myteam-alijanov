@@ -1,0 +1,154 @@
+.sect1 {
+    background-color: #014E56;
+    background-image: url(../img/contactback.png);
+    background-repeat: no-repeat;
+    background-position: left top 50px;
+}
+
+.container {
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    min-width: 380px;
+    width: 50%;
+    background-color: rgb(120, 116, 116);
+    margin: 20px auto;
+    position: relative;
+}
+
+.main{
+    background-color: transparent;
+    position: relative;
+}
+
+
+.contact {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 70px;
+    top: 10px;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+
+.ask {
+    position: absolute;
+    width: 200px;
+    height: 48px;
+    left: 70px;
+    top: 90px;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #F67E7E;
+}
+
+
+.sect2-links {
+    list-style: none;
+
+}
+
+
+.sect2-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    position: relative;
+
+
+    .sect2-img {
+        margin: 35px 23px;
+        width: 72px;
+        height: 72px;
+        position: relative;
+        background-color: #2C6269;
+        border: 1px solid transparent;
+        border-radius: 50%;
+
+        img {
+            position: absolute;
+            top: -12px;
+            left: -12px;
+        }
+    }
+
+    .sect2-content {
+        position: relative;
+
+
+        h3 {
+            position: absolute;
+            width: 280px;
+            height: 28px;
+            left: 0%;
+            right: 0%;
+            top: -20px;
+            font-family: 'Livvic';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 28px;
+            color: #ffffff;
+
+        }
+    }
+}
+
+
+
+@media (max-width:857px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .col-6 {
+        width: 80%;
+    }
+}
+
+@media (max-width:467px) {
+
+    .container{
+        width: 100%;
+
+    }
+    .col-6{
+        width: 100%;
+        outline: none;
+    }
+    .contact{
+        font-size: 40px;
+        width: 100px
+    }
+
+    .ask{
+        font-size: 28px;
+        width: 180px;
+    }
+
+    .sect2-links{
+        width: 100%;
+    }
+
+    .sect2-item{
+        outline: none;
+        width: 100%;
+        .sect2-content{
+            h3{
+                width: 200px;
+            }
+        }
+    }
+}
