@@ -226,6 +226,9 @@ header {
   }
 }
 @media (max-width: 467px) {
+  .sect1 {
+    background-image: none;
+  }
   .container {
     width: 327px;
     margin: 0;
