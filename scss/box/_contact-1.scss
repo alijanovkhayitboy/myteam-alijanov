@@ -120,8 +120,11 @@
 
 @media (max-width:467px) {
 
+
     .container{
-        width: 100%;
+        width: 327px;
+        margin: 0;
+        padding: 0;
 
     }
     .col-6{
@@ -129,13 +132,15 @@
         outline: none;
     }
     .contact{
+        left: 20px;
         font-size: 40px;
-        width: 100px
+        width: 80px
     }
 
     .ask{
         font-size: 28px;
         width: 180px;
+        left: 20px;
     }
 
     .sect2-links{
