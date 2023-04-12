@@ -13,14 +13,14 @@
 }
 
 .col-6 {
-    min-width: 380px;
+    min-width: 360px;
     width: 50%;
     background-color: rgb(120, 116, 116);
     margin: 20px auto;
     position: relative;
 }
 
-.main{
+.main {
     background-color: transparent;
     position: relative;
 }
@@ -107,6 +107,93 @@
 }
 
 
+.second {
+    background-color: transparent;
+    form {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .group {
+        position: relative;
+        margin: 10px auto;
+
+        .input1 {
+            background: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #c6c6c6;
+
+        }
+
+        .input1:focus {
+            outline: none;
+
+        }
+
+        .label {
+            color: #c6c6c6;
+            font-size: 18px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+
+            top: 10px;
+            left: 5px;
+            transition: 0.4s ease all;
+            mix-blend-mode: normal;
+            opacity: 0.6;
+        }
+
+        .input1:focus ~.label,.input1:valid ~.label {
+            top: -10px;
+            font-size: 14px;
+        }
+        .bar{
+            position: relative;
+            display: block;
+        }
+        .bar::before{
+            content: '';
+            height: 2px;
+            width: 0%;
+            position: absolute;
+            background-color: #79C8C7;
+            left: 0;
+            bottom: 0px;
+            transition: all 0.1s ease;
+        }
+        .input1:focus ~ .bar::before{
+            width: 100%;
+        }
+        
+       
+
+    }
+    .submit-btn{
+        width: 123px;
+        height: 48px;
+        border: 1px solid transparent;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #014E56;
+        cursor: pointer;
+        background-color: rgb(223, 223, 223);
+        transition: all 0.3s ease;
+    }
+    .submit-btn:hover{
+        background-color: #ffffff;
+    }
+
+
+}
+
+
 
 @media (max-width:857px) {
     .container {
@@ -119,44 +206,48 @@
 }
 
 @media (max-width:467px) {
-    .sect1{
+    .sect1 {
         background-image: none;
     }
 
 
-    .container{
+    .container {
         width: 327px;
         margin: 0;
         padding: 0;
 
     }
-    .col-6{
+
+    .col-6 {
         width: 100%;
         outline: none;
     }
-    .contact{
+
+    .contact {
         left: 20px;
         font-size: 40px;
         width: 80px
     }
 
-    .ask{
+    .ask {
         font-size: 28px;
         width: 180px;
         left: 20px;
     }
 
-    .sect2-links{
+    .sect2-links {
         width: 100%;
     }
 
-    .sect2-item{
+    .sect2-item {
         outline: none;
         width: 100%;
-        .sect2-content{
-            h3{
+
+        .sect2-content {
+            h3 {
                 width: 200px;
             }
         }
     }
 }
+
